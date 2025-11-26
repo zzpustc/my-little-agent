@@ -1,7 +1,6 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "http://home.ustc.edu.cn/~zzp1994/LLM/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
