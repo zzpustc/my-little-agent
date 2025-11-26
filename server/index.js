@@ -13,8 +13,13 @@ app.use(express.json());
 
 // 连接数据库
 mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log('MongoDB Connected'))
-  .catch(err => console.error(err));
+  .then(() => {
+    console.log('✅ MongoDB 连接成功！');
+  })
+  .catch(err => {
+    console.error('❌ MongoDB 连接失败！错误详情：');
+    console.error(err);
+  });
 
 // --- API 路由 ---
 
@@ -73,4 +78,5 @@ app.post('/api/chat', async (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
