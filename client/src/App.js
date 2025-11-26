@@ -167,7 +167,7 @@ import remarkGfm from 'remark-gfm';
 import { FaPlus, FaPaperPlane, FaRobot, FaUser } from 'react-icons/fa';
 import './App.css';
 
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://gemini-backend-flvn.onrender.com';
 
 function App() {
   // ... (中间的状态逻辑 useState, useEffect, sendMessage 等完全不变，保持原样) ...
